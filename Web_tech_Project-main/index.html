@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Evently | Event Management System</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         NAVIGATION BAR
+    ========================================================== -->
+
+    <header class="nav">
+
+        <a
+            class="logo"
+            href="index.html"
+        >
+            <b>E</b> Evently
+        </a>
+
+
+        <nav>
+
+            <a href="#events">
+                Events
+            </a>
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <div>
+
+            <a
+                class="btn outline"
+                href="login.php"
+            >
+                Login
+            </a>
+
+            <a
+                class="btn"
+                href="register.php"
+            >
+                Register
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         HERO SECTION
+    ========================================================== -->
+
+    <section class="hero">
+
+        <div>
+
+            <small>
+                EVENT MANAGEMENT SYSTEM
+            </small>
+
+
+            <h1>
+
+                Plan. Discover.
+                <br>
+
+                <span>
+                    Experience.
+                </span>
+
+            </h1>
+
+
+            <p>
+                Manage events, bookings, attendees, tickets
+                and registrations from one simple platform.
+            </p>
+
+
+            <a
+                class="btn"
+                href="#events"
+            >
+                Explore Events
+            </a>
+
+
+            <a
+                class="btn white"
+                href="register.php"
+            >
+                Create Account
+            </a>
+
+
+            <div class="stats">
+
+                <b>
+                    150+
+                    <small>
+                        Events
+                    </small>
+                </b>
+
+
+                <b>
+                    700+
+                    <small>
+                        Attendees
+                    </small>
+                </b>
+
+
+                <b>
+                    50+
+                    <small>
+                        Organizers
+                    </small>
+                </b>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         UPCOMING EVENTS
+    ========================================================== -->
+
+    <section
+        id="events"
+        class="section"
+    >
+
+        <div class="heading">
+
+            <div>
+
+                <small>
+                    EXPLORE
+                </small>
+
+
+                <h2>
+                    Upcoming Events
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SEARCH AND CATEGORY FILTER -->
+
+        <div class="tools">
+
+
+            <input
+                type="text"
+                id="homeSearch"
+                oninput="filterHomeEvents()"
+                placeholder="Search events by name..."
+            >
+
+
+            <select
+                id="homeCategory"
+                onchange="filterHomeEvents()"
+            >
+
+                <option value="All">
+                    All
+                </option>
+
+                <option value="Technology">
+                    Technology
+                </option>
+
+                <option value="Music">
+                    Music
+                </option>
+
+                <option value="Business">
+                    Business
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+                <option value="Workshop">
+                    Workshop
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- EVENTS WILL BE INSERTED HERE BY JAVASCRIPT -->
+
+        <div
+            id="homeEvents"
+            class="grid"
+        ></div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         FEATURES
+    ========================================================== -->
+
+    <section
+        id="features"
+        class="section"
+    >
+
+        <div class="center">
+
+            <small>
+                FEATURES
+            </small>
+
+
+            <h2>
+                Everything in One Place
+            </h2>
+
+
+            <p>
+                A simple and efficient platform for a seamless
+                event experience.
+            </p>
+
+        </div>
+
+
+
+        <div class="grid">
+
+
+            <article class="card">
+
+                <h3>
+                    Easy Event Planning
+                </h3>
+
+
+                <p>
+                    Create and organize events with essential
+                    details such as dates, locations, categories,
+                    schedules and ticket information.
+                </p>
+
+            </article>
+
+
+
+            <article class="card">
+
+                <h3>
+                    Simple Ticket Booking
+                </h3>
+
+
+                <p>
+                    Discover upcoming events, choose tickets
+                    and complete bookings through a smooth
+                    and convenient process.
+                </p>
+
+            </article>
+
+
+
+            <article class="card">
+
+                <h3>
+                    Real-Time Information
+                </h3>
+
+
+                <p>
+                    Stay updated with event schedules,
+                    available seats, booking details and
+                    important notifications.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================== -->
+
+    <section
+        id="about"
+        class="section about"
+    >
+
+        <h2>
+            Smarter Event Management
+        </h2>
+
+
+        <p>
+            Evently reduces manual event management work
+            and provides accurate event, registration and
+            booking information.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        Evently - The Event Management System © 2026
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
